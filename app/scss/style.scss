@@ -1,7 +1,8 @@
+@import'libs';
 @import 'vars';
 @import 'fonts';
-@import 'global';
 @import'reset';
+@import 'global';
 
 .header{
     &__inner{
@@ -20,20 +21,22 @@
     }
     &__list-link{
         color: $title;
-        padding-bottom: 1px;
+        padding-bottom: 0 2px 1px;
         transition: all .3s;
-        @extend %quicksand-400 !optional;
+        @extend %roboto-400 !optional;
         &:hover{
         color: $accent;
         border-bottom: 1px solid $accent;
-        @extend %quicksand-500!optional;
+        @extend %roboto-700 !optional;
       
     }
+
+      
 }   
     &__list-link--active{
     color: $accent;
     border-bottom: 1px solid $accent;  
-    @extend %quicksand-500!optional;
+    @extend %roboto-700 !optional;
         
      }
 }
@@ -69,21 +72,181 @@
 }
 
 
+footer{
+    background-color: $bg;
+}
+.footer-top{
+    padding: 70px 0 40px;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    &__contact{
+        width: 250px;
+        margin-right: 50px;
+    }
+    &__nav{
+        width: 170px;
+        margin-right: 30px;
+    }
+    &_item-form{
+        max-width: 470px;
+    }
+    &__logo{
+        margin-bottom: 33px;
+        display: block;
+    }
+    &__adress,
+    &__email,
+    &__phone{
+   
+        display: block;
+        margin-bottom: 14px;
+    }
+    &__social-list{
+       display: flex;
+       align-items: center;
+       margin-top: 30px;
+    }
+    &__social-item + .footer-top__social-item{
+      padding-left: 18px;
+    }
 
+    &__social-link{
+         transition: all .3s;
+        path{
+           
+            fill:$default;
+        }
+        &:hover{
+            path{
+                fill:$accent;
+            }
+        }
+    }
+    &__title{
+        color: $title;
+        @extend %roboto-400 !optional;
+       margin-bottom: 40px;
+       font-size: 22px;
+       line-height: 1;
+    }
+    &__link{
+        margin-bottom: 14px;
+        display: block;
+    }
+    &__text{
+        margin-bottom: 25px;
+    }
+    &__form-input{
+      background-color: #fff;
+      max-width: 320px;
+      width: 100%;
+      border: none;
+      padding: 12px 12px 15px;
+      box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+      &::placeholder{
+        color: $default;
+        font-size: 16px;
+      }
+    }
+    &__form-btn{
+    @extend %btn;   
+  
+    cursor: pointer;
+    }
+}
+.footer-bottom{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    &__copy{
+        font-size: 12px;
+    }
+    
+    &__accept-img{
+        display: inline-block;
+        margin-left: 25px;
+        vertical-align: middle;
+    }
+}
+.top-slider{
+    background-image: url('../images/abstract\ shape.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bg;
+    padding: 65px 0 45px;
+    &__container{
+      max-width: 1650px;
+    }
+    &__content{
+        padding-left: 150px;
+        padding-top: 125px;
+    }
+    &__item{
+        display: flex !important;
+        justify-content: space-between;
+    }
+    &__title{
+        line-height: 52px;
+        margin-top: 10px;
+        display: flex;
+        max-width: 670px;
+        font-size: 58px;
+        color: $title;
+        @extend %roboto-700 !optional;
 
+    }
+    &__text{
+        max-width: 470px;
+        margin-bottom: 55px;
+    }
+    &__link{
+        @extend %btn;
+        padding: 14px 36px; 
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+        li{
+            padding: 0 5px;
+            line-height: 0;
 
+            button{
+               padding: 0;
+               font-size: 0;
+               background-color: transparent;
+               width: 26px;
+               height: 26px;
+               border-radius: 50%;
+               border: 1px solid transparent;
+               position: relative;
+               &::before{
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $default;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+               }
+            }
+            &.slick-active{
+                button{
+                    border-color: $accent;
+                    &::before{
+                        background-color: $accent;
+                    }
+                }
 
-
-
-
-
-
-
-
-
-
-
-
+            }
+        }
+    }
+}
+  
 
 
 
