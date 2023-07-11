@@ -1,23 +1,41 @@
 $accent:#fe3e57;
 $default:#8d8d8d;
 $title:#29282d;
+$bg:#f6f6f6;
 
 
 %Quicksand-400px{
-    font-family: 'Quicksand-Regular', sans-serif;
+    font-family: 'Quicksand-Regular';
     font-weight: 400;
 
 }
 %Quicksand-500px{
-    font-family: 'Quicksand-Medium ', sans-serif;
+    font-family: 'Quicksand-Medium ';
     font-weight: 500;
 
 }
 %roboto-400px{
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto-Regular';
     font-weight: 400;
 }
 %roboto-700px{
-    font-family: 'Roboto-Bold', sans-serif;
+    font-family: 'Roboto-Bold';
     font-weight: 700;
 }
+%btn{
+    border: none;
+    padding: 12px 26px; 
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $accent;
+    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+    @extend %roboto-400 !optional;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+  }
+  @function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+  }
+  

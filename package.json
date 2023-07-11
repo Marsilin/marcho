@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.29.3",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
@@ -12,7 +13,9 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.0",
-    "sass": "^1.63.6"
+    "rateyo": "^2.3.2",
+    "sass": "^1.63.6",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

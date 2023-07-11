@@ -20,8 +20,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -36,7 +36,7 @@ ul[class] {
 }
 
 img {
-    min-width: 100%;
+    //  min-width: 100%;
     display: block;
 }
 
@@ -44,7 +44,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+     font: inherit;
 }
 
 a[class] {
