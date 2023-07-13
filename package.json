@@ -16,11 +16,5 @@
     "rateyo": "^2.3.2",
     "sass": "^1.63.6",
     "slick-carousel": "^1.8.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "K",
-  "license": "ISC",
-  "description": ""
+  }
 }

@@ -24,8 +24,10 @@ function styles(){
         overrideBrowserslist: ['last 10 versions'],
         grid:true
       }))
+      
      .pipe(dest('app/css'))
      .pipe(browserSync.stream())
+
 }
 
 
@@ -68,8 +70,7 @@ function build(){
   return src([
     'app/**/*.html',
     'app/css/style.min.css',
-    'app/js/main.min.js'
-  ],{base:'app'})
+    'app/js/main.min.js'],{base:'app'})
   .pipe(dest('dist'))
 }
 
