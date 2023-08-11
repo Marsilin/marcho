@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcho</title>
-    <link rel="stylesheet" href="shop.min.css">
+    <link rel="stylesheet" href="css/shop.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
  {% include 'app/module/_header/_header.html' %}
@@ -15,7 +16,9 @@
 <section class="shop">
     <div class="container">
         <div class="shop__inner">
-           
+<button class="shop__filter-btn" type="submit">
+   
+    </button>
             <div class="shop__filters filter">
 
             <div class="filter__search filter__item">
@@ -23,6 +26,7 @@
                 <form class="filter-search__form" action="#">
                 <input class="filter-search__input" type="text" placeholder="Serch your keyword...">
                 <button class="filter-search__btn" type="submit">
+                
                     <img src="images/icons/search-white.svg" alt="search-images">
                 </button>
                 </form>
